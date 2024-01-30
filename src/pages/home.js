@@ -102,7 +102,7 @@ export default function Home({ navigation }) {
                             <View style={styles.closet}>
                                 <Image
                                     style={styles.closetImage}
-                                    source={require('../../assets/images/hoody.png')}
+                                    source={require('../../assets/images/hoodyicon.png')}
                                 />
                                 <Text style={styles.closetName}>
                                     Hoody

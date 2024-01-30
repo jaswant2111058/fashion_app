@@ -15,7 +15,7 @@ export default function BottomNav({ navigation }) {
                     <View style={nav == 0 ? styles.setlectNavBtn : styles.navBtn}>
                         <View style={styles.navBtnInner}>
                             <Pressable onPress={() => { setNav(0); navigation.navigate('Home') }}>
-                                <Icon name='hanger' size={30} color={"black"} style={{ marginLeft: 4 }} />
+                                <Icon name='hanger' size={30} color={"black"} />
                                 <Text style={styles.buttonName}>
                                     Closet
                                 </Text>
@@ -25,7 +25,7 @@ export default function BottomNav({ navigation }) {
                     <View style={nav ==1 ? styles.setlectNavBtn : styles.navBtn}>
                         <View style={styles.navBtnInner}>
                             <Pressable onPress={() => { setNav(1); navigation.navigate('Group') }}>
-                                <Icon name='account-group' size={30} color={"black"} style={{ marginLeft: 5 }} />
+                                <Icon name='account-group' size={30} color={"black"} style={{ marginLeft: 3 }} />
 
                                 <Text style={styles.buttonName}>
                                     Groups
@@ -37,7 +37,7 @@ export default function BottomNav({ navigation }) {
                     <View style={nav == 2 ? styles.setlectNavBtn : styles.navBtn}>
                         <View style={styles.navBtnInner}>
                             <Pressable onPress={() => { setNav(2); navigation.navigate('Discover') }}>
-                                <Icon name='shopping-search' size={30} color={"black"} style={{ marginLeft: 10 }} />
+                                <Icon name='shopping-search' size={30} color={"black"} style={{ marginLeft:6 }} />
                                 <Text style={styles.buttonName}>
                                     Discover
                                 </Text>
@@ -47,7 +47,7 @@ export default function BottomNav({ navigation }) {
                     <View style={nav == 3 ? styles.setlectNavBtn : styles.navBtn}>
                         <View style={styles.navBtnInner}>
                             <Pressable onPress={() => { setNav(3); navigation.navigate('Saved') }}>
-                                <Icon name='heart-circle-outline' size={30} color={"black"} style={{ marginLeft: 3 }} />
+                                <Icon name='heart-circle-outline' size={30} color={"black"}  />
                                 <Text style={styles.buttonName}>
                                     Saved
                                 </Text>
@@ -81,15 +81,16 @@ const styles = StyleSheet.create({
         elevation: 10,
         backgroundColor: '#fff',
         height: 70,
-        paddingHorizontal: 20,
+        paddingHorizontal:10,
         borderRadius: 20,
     },
     buttonName: {
+        fontSize:11,
         color: "black",
         fontWeight: "700",
     },
     navBtn: {
-        width: 68,
+        width: 50,
         borderRadius:15,
         paddingVertical: 3,
         backgroundColor:"#fff",
@@ -101,10 +102,10 @@ const styles = StyleSheet.create({
         
     },
     setlectNavBtn: {
-        width: 68,
-        borderRadius: 15,
+        width: 50,
+        borderRadius:15,
         paddingVertical: 3,
-        backgroundColor: "#DFE4EC",
-        elevation:1,
+        backgroundColor:"#DFE4EC",
+        elevation:10,
     }
 });
